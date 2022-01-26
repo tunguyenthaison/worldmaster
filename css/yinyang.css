@@ -1,0 +1,74 @@
+body {
+
+}
+
+
+.container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.circle {
+    position: relative;
+    background-color: white;
+    border-style: solid;
+    height: 400px;
+    width: 200px;
+    border-width: 0px 200px 0px 0px;
+    border-color: black;
+    border-radius: 50%;
+    animation: rotation 15s linear infinite;
+    /*margin-top: 3rem;*/
+    /*box-sizing: border-box;*/
+    /*height: 200px;*/
+    /*width: 200px;*/
+    /*border-radius: 50%;*/
+    /*padding-left: 50px;*/
+    /*background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);*/
+    /*animation: roll 10s linear infinite;*/
+}
+
+.yinyang {
+    position: relative;
+    background-color: #fff;
+    border-style: solid;
+    height: 200px;
+    width: 100px;
+    border-width: 0px 100px 0px 0px;
+    border-color: black;
+    border-radius: 50%;
+    animation: rotation 15s linear infinite;
+    left: 50%;
+}
+
+.yinyang:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border: 40px solid black;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    box-shadow: inset -2px 0 0 2px gray;
+}
+
+.yinyang:after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border: 40px solid white;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 0;
+    box-shadow: inset -2px 0 0 2px gray;
+}
+
+@keyframes rotation {
+  to {transform: rotate(-720deg);}
+}

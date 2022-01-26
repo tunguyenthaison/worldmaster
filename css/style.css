@@ -1,0 +1,33 @@
+body {
+    background-color: darkgrey;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: gray;
+    overflow-x: hidden;  /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.main {
+    margin-left: 200px;
+    padding-left: 30px;
+}
+
+.content-text {
+    font-family: "Rockwell Condensed" , sans-serif;
+    font-size: inherit;
+}
